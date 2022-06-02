@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <limits.h>
 
-/* Display sizeof 5 types in c*/
+/**
+ * main - Display sizeof 5 types in c
+ * Return: 0
+ */
 int main(void)
 {
 	printf("Size of a char: %ld byte(s)\n", sizeof(char));
