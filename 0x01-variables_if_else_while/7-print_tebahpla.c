@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: display alphabet  letter from z to a
+ * Description: display alphabet letter from a to z except e and q
  * Return: 0
  */
 int main(void)

@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main: print digits from 0 to 9
- * void
- * return 0
+ * main - main block
+ * Description: display digit from 0 to 9
+ * Return: 0
  */
 int main(void)
 	{
