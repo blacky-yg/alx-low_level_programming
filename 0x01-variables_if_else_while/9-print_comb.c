@@ -1,10 +1,7 @@
 #include <stdio.h>
 
 /**
- * main: print positive or negative numbers
- *
- * Description: display digits with putchar and comma
- * Return: 0
+ * main: display digits with putchar and comma
  */
 int main(void)
 {
