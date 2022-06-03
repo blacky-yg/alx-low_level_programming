@@ -1,11 +1,18 @@
 #include <stdio.h>
-
 /**
- * main: print positive or negative numbers
- * void
- * return 0
+ * main - main block
+ * Description: display alphabet letter from a to z
+ * Return: 0
  */
 int main(void)
 {
-    return (0);
+	char c = 'a';
+
+	for (; c <= 'z'; c++)
+		putchar(c);
+	c = 'A';
+	for (; c <= 'Z'; c++)
+		putchar(c);
+	putchar('\n');
+	return (0);
 }
