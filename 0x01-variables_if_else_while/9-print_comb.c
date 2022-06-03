@@ -2,9 +2,9 @@
 
 /**
  * main: print positive or negative numbers
- * void
- * display digits with putchar and comma
- * return 0
+ *
+ * Description: display digits with putchar and comma
+ * Return: 0
  */
 int main(void)
 {
