@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * main: display digits with putchar and comma
+ * main - main block
+ * Description: Display digit with comma
+ * Return: 0
  */
 int main(void)
 {
