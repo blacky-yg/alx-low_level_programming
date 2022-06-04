@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: Display number in base 16
+ * Description: Display all 2 distins combinations of 2 digits
  * Return: 0
  */
 int main(void)
