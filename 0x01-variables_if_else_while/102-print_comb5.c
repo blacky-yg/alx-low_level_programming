@@ -6,12 +6,9 @@
  */
 int main(void)
 {
-	int c = 48;
-	int d = 48;
-	int e = 48;
-	int f = 48;
+	int c, d, e, f;
 
-	for (; c <= 57; c++)
+	for (c = 48; c <= 57; c++)
 	{
 		for (d = 48; d <= 57; d++)
 		{
@@ -26,7 +23,7 @@ int main(void)
 						putchar(' ');
 						putchar(e);
 						putchar(f);
-						if (c + d + e + f != 227)
+						if (!((e == 57 && f == 57) && (c == 57 && d == 56)))
 						{
 							putchar(',');
 							putchar(' ');
