@@ -7,28 +7,27 @@
 int main(void)
 {
 	int c, d, e, f;
+	int i, j;
 
-	for (c = 48; c <= 57; c++)
+	for (i = 0; i < 100; i++)
 	{
-		for (d = 48; d <= 57; d++)
+		c = i / 10;
+		d = i % 10;
+		for (j = 0; j < 100; j++)
 		{
-			for (e = 48; e <= 57; e++)
+			e = j / 10;
+			f = j % 10;
+			if ((c == e && d < f) || c < e)
 			{
-				for (f = 48; f <= 57; f++)
+				putchar(c + '0');
+				putchar(d + '0');
+				putchar(' ');
+				putchar(e + '0');
+				putchar(f + '0');
+				if (!(d == 8 && c == 9))
 				{
-					if ((c * 10 + d) < (e * 10 + f))
-					{
-						putchar(c);
-						putchar(d);
-						putchar(' ');
-						putchar(e);
-						putchar(f);
-						if (!((e == 57 && f == 57) && (c == 57 && d == 56)))
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
