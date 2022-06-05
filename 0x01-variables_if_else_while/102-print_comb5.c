@@ -8,12 +8,13 @@ int main(void)
 {
 	int c, d, e, f;
 	int i, j;
+	int limit = 100;
 
-	for (i = 0; i < 100; i++)
+	for (i = 0; i < limit; i++)
 	{
 		c = i / 10;
 		d = i % 10;
-		for (j = 0; j < 100; j++)
+		for (j = 0; j < limit; j++)
 		{
 			e = j / 10;
 			f = j % 10;
