@@ -1,12 +1,11 @@
 #include <unistd.h>
 
 /**
- * is_lower: display function
- * @c num passed as parameter
+ * _islower - display function
+ * @c: num passed as parameter
  *
  * Description: Check if a num is lower or not
- * Return: 1 if yes
- * 0 if not
+ * Return: 1 if yes, 0 if not
  */
 int _islower(int c)
 {
