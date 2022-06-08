@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * _abs: check function
- * @n number for the absolute ops
+ * _abs - check function
+ * @n: number for the absolute ops
  *
  * Description: Compute the absolute value of an integer
  * Return: -1 and prints - if n < 0
