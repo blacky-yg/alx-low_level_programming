@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
  * print_alphabet: display function simple function
@@ -8,6 +8,7 @@
 void print_alphabet(void)
 {
 	for (char i = 97; i <= 122; i++)
-		putchar(i);
-	putchar('\n');
+		write(1, &i, 1);
+	write(1, "\n", 1);
 }
+
