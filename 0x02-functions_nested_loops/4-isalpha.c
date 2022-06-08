@@ -1,12 +1,11 @@
 #include <unistd.h>
 
 /**
- * is_alpha: check function
- * @c num passed as parameter
+ * _isalpha: check function
+ * @c: num passed as parameter
  *
  * Description: Check if a letter is alphanum or not
- * Return: 0 if c isn't alpha
- * 1 if c is alphanum
+ * Return: 0 if c isn't alpha, 1 if c is alphanum
  */
 int _isalpha(int c)
 {
