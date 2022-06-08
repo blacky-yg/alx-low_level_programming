@@ -1,9 +1,8 @@
-#include <unistd.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
- * print_sign: check function
- * @n num passed as parameter
+ * print_sign - check function
+ * @n: num passed as parameter
  *
  * Description: print size of the number passed as parameter
  * Return: -1 and prints - if n < 0
