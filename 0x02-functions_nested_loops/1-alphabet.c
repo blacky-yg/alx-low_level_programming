@@ -7,8 +7,9 @@
  */
 void print_alphabet(void)
 {
-	for (char i = 97; i <= 122; i++)
+	int i;
+
+	for (i = 97; i <= 122; i++)
 		write(1, &i, 1);
 	write(1, "\n", 1);
 }
-
