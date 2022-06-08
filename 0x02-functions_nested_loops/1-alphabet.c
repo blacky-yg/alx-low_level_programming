@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet: display function simple function
+ * print_alphabet - display function simple function
  * Description: display letter from a to z
  * Return: 0
  */
