@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * fizz_buzz - fizz Buzz program
+ * main - fizz Buzz program
  *
  * Description: Fizz Buzz (3 && 5)
  * Return: 0
