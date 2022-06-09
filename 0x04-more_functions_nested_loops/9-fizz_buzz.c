@@ -2,9 +2,7 @@
 
 /**
  * main - fizz Buzz program
- *
  * Description: Fizz Buzz (3 && 5)
- * Return: 0
  */
 int main(void)
 {
