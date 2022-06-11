@@ -6,7 +6,7 @@
  * Description: print an integer
  * Return: void
  */
-void print_number(int nb)
+void print_number(int n)
 {
 	int nb, d, c;
 
