@@ -6,21 +6,21 @@
  * Description: print an integer
  * Return: void
  */
-void print_number(int n)
+void print_number(int nb)
 {
-	int i, d, c;
+	int nb, d, c;
 
 	if (n >= 0)
-		i = n;
+		nb = n;
 	else
 	{
 		_putchar('-');
-		i = n * -1;
+		nb = n * -1;
 	}
-	d = i;
+	d = nb;
 	c = 1;
 	for (; d > 9; c *= 10)
 		d /= 10;
 	for (; c >= 1; c /= 10)
-		_putchar(((i / c) % 10) + '0');
+		_putchar(((nb / c) % 10) + '0');
 }
