@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * put2 - Prints odd letter
+ * puts2 - Prints odd letter
  * @str: a string
  *
  * Description: Print odd letter
