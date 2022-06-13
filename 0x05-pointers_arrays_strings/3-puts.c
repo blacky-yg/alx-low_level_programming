@@ -2,7 +2,7 @@
 
 /**
  * _puts - display a string
- * @s: a string
+ * @str: a string
  *
  * Description: Get the length of a string
  * Return: length of the string
