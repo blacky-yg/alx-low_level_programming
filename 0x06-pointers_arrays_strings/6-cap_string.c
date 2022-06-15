@@ -13,14 +13,18 @@ char *cap_string(char *str)
 
 	for (i = 0; str[i]; i++)
 	{
-        if (str[i] == '\\' && (str[i + 1] == 'n' || str[i + 1] == 't'))
-            i += 2;
-        if (str[i] == '.' && (str[i + 1] >= 'a' && str[i + 1] <= 'z'))
-            str[i + 1] -= 32;
-        // if (str[i] == '.' && str[i + 1] == ' ')
-            // str[i + 2] += 32;
-		// if (str[i] >= 'a' && str[i] <= 'z')
-		// 	str[i] = str[i] - 32;
+		if ((str[i] >= 'a' && str[i] <= 'z') &&
+				(str[i - 1] == '!' || str[i - 1] == ' ' ||
+				str[i - 1] == '\t' || str[i - 1] == '\n' ||
+				str[i - 1] == '(' || str[i - 1] == ')' ||
+				str[i - 1] == '?' || str[i - 1] == '"' ||
+				str[i - 1] == '{' || str[i - 1] == '}' ||
+				str[i - 1] == ',' || str[i - 1] == ';' || str[i - 1] == '.'))
+			str[i] -= 32;
+		else if (str[0] >= 'a' && str[0] <= 122)
+			str[i] -= 32;
+		else
+			continue;
 	}
 	return (str);
 }
