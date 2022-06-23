@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen_recurs - print a rev string recursively
+ * _strlen_recursion - print a rev string recursively
  * @s: string to print
  *
  * Description: Print a rev string recursively
