@@ -1,20 +1,11 @@
 #include "main.h"
 
 /**
- * main - main block that print every letter of puchar
+ * _putchar - print a letter
  * Description: Print every letter of puchar
  * Return: 0
  */
-int main(void)
+void _putchar(char c)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
-	return (0);
+	write(1, &c, 1);
 }

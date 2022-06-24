@@ -8,7 +8,7 @@
  * Return: the number
  */
 
-int _abs(int n)
+int _abs(int __attribute__((unused)) n)
 {
 	return (0);
 }
