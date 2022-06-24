@@ -3,7 +3,7 @@
 /**
  * main - print the binary name
  * @argv: arguments tab
- * @argv: arguments tab
+ * @argc: number of argument
  *
  * Description: Block main
  * Return: 0
