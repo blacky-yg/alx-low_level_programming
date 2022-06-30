@@ -7,7 +7,7 @@
  * Description: check if a char is lowercase or not
  * Return: 0 or 1
  */
-int _islower(int __attribute__((unused)) c)
+int _islower(int c)
 {
 	return (0);
 }

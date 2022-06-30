@@ -8,8 +8,7 @@
  * Description: Concatenates two strings
  * Return: the final string
  */
-char *_strstr(char __attribute__((unused)) *s,
-               char __attribute__((unused)) *accept)
+char *_strstr(char *s, char *accept)
 {
     return (NULL);
 }

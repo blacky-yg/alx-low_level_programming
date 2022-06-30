@@ -2,6 +2,7 @@
 
 /**
  * _putchar - print a letter
+ * @c: character to print
  * Description: Print every letter of puchar
  * Return: 0
  */

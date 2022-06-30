@@ -7,7 +7,7 @@
  * Description: get number from a string
  * Return: 0 or 1
  */
-int _atoi(char __attribute__((unused)) *s)
+int _atoi(char *s)
 {
 	return (0);
 }

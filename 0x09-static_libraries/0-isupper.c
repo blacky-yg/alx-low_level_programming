@@ -7,7 +7,7 @@
  * Description: check if a char is uppercase or not
  * Return: 0 or 1
  */
-int _isupper(int __attribute__((unused)) c)
+int _isupper(int c)
 {
 	return (0);
 }

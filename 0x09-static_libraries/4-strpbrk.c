@@ -8,8 +8,7 @@
  * Description: Concatenates two strings
  * Return: the final string
  */
-char *_strpbrk(char __attribute__((unused)) *s,
-               char __attribute__((unused)) *accept)
+char *_strpbrk(char *s, char *accept)
 {
     return (NULL);
 }

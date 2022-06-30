@@ -7,7 +7,7 @@
  * Description: check if a char is an alpha_num
  * Return: 0 or 1
  */
-int _isalpha(int __attribute__((unused)) c)
+int _isalpha(int c)
 {
 	return (0);
 }
