@@ -11,12 +11,19 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	char *name_cpy;
+	char *owner_cpy;
 	dog_t *d = malloc(sizeof(dog_t *));
 
 	if (!d)
+	{
+		free(d);
 		return (NULL);
+	}
+	name_cpy = strdup(name);
+	owner_cpy = strdup(owner);
 	d->age = age;
-	d->name = name;
-	d->owner = owner;
+	d->name = name_cpy;
+	d->owner = owner_cpy;
 	return (d);
 }
