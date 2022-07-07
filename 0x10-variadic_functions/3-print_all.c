@@ -9,13 +9,13 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i;
+	int i = 0;
 	int arg;
 	char type;
 	va_list args;
 
 	va_start(args, format);
-	for (i = 0; format && format[i];)
+	while (format && format[i])
 	{
 		arg = get_format(format);
 		type = *(format + i);
@@ -75,7 +75,7 @@ int get_format(const char * const format)
 	int j = 0;
 	char type;
 
-	for (; (*(format + j)) && format;)
+	while ((*(format + j)) && format)
 	{
 		type = *(format + j);
 		switch (type)
