@@ -15,7 +15,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 
 	va_start(args, format);
-	for (i = 0; format && format[i]; i++)
+	for (i = 0; format && format[i];)
 	{
 		arg = get_format(format);
 		type = *(format + i);
@@ -37,7 +37,7 @@ void print_all(const char * const format, ...)
 			i++;
 			break;
 		case 's':
-			printf("%f", check_string(va_arg(args, char *)));
+			printf("%s", check_string(va_arg(args, char *)));
 			display_sep(i, arg);
 			i++;
 			break;
@@ -62,14 +62,13 @@ void display_sep(int i, int j)
 		printf(", ");
 }
 
-
 /**
  * get_format - get format type
  * @format: type of the string
  *
  * Return: int
  */
-int get_format(char *format)
+int get_format(const char * const format)
 {
 	int i = 0;
 	int j = 0;
@@ -77,6 +76,7 @@ int get_format(char *format)
 
 	for (; (*(format + j)) && format;)
 	{
+		type = *(format + j);
 		switch (type)
 		{
 		case 'c':
@@ -101,22 +101,6 @@ int get_format(char *format)
 		}
 	}
 	return (i);
-}
-
-
-/**
- * print_comma - prints a comma and space when valid
- * @j: first number to be compared
- * @x: second number to be compared
- *
- * Return: void
- */
-void print_comma(int j, int x)
-{
-	if (j != x)
-	{
-		printf(", ");
-	}
 }
 
 /**
