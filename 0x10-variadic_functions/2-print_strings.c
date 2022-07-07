@@ -11,11 +11,10 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
-	int sum = 0;
 	va_list args;
 
 	if (n == 0)
-		return (0);
+		return;
 	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
@@ -27,7 +26,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 				printf("%s", check_string(va_arg(args, char *)));
 		}
 		else
-			printf("%s", check_striing(va_arg(args, char *)));
+			printf("%s", check_string(va_arg(args, char *)));
 	}
 	printf("\n");
 	va_end(args);
