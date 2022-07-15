@@ -8,10 +8,10 @@
  */
 size_t list_len(const list_t *h)
 {
-    const list_t *tmp = h;
-    size_t len = 0;
+	const list_t *tmp = h;
+	size_t len = 0;
 
-    for (; tmp; tmp = tmp->next, len++)
-    {}
-    return (len);
+	for (; tmp; tmp = tmp->next, len++)
+	{}
+	return (len);
 }
