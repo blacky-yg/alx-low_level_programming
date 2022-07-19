@@ -1,0 +1,14 @@
+{
+	"editor.insertSpaces": true,
+	"editor.tabSize": 4,
+	"editor.detectIndentation": true,
+	"files.associations": {
+		"unistd.h": "c",
+		"stdio.h": "c",
+		"0-object_like_macro.h": "c",
+		"dog.h": "c",
+		"stdlib.h": "c",
+		"3-calc.h": "c",
+		"variadic_functions.h": "c"
+	}
+}
