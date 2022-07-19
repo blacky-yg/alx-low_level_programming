@@ -11,7 +11,11 @@ size_t print_listint(const listint_t *h)
 	const listint_t *tmp = h;
 	size_t nb = 0;
 
-	for (; tmp; nb++, tmp = tmp->next)
+	while (tmp != NULL)
+	{
 		printf("%d\n", tmp->n);
+		nb += 1;
+		tmp = tmp->next;
+	}
 	return (nb);
 }
