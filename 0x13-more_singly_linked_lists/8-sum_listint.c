@@ -8,10 +8,10 @@
  */
 int sum_listint(listint_t *head)
 {
-    listint_t *tmp = head;
-    int sum = 0;
+	listint_t *tmp = head;
+	int sum = 0;
 
-    for (; tmp; tmp = tmp->next)
-        sum += tmp->n;
-    return (sum);
+	for (; tmp; tmp = tmp->next)
+		sum += tmp->n;
+	return (sum);
 }
