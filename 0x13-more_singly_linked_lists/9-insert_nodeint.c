@@ -10,34 +10,34 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *node = NULL;
-	listint_t *prev = NULL;
+	listint_t *new_node = NULL;
+	listint_t *tmp = NULL;
 	unsigned int i = 0;
 
-	node = malloc(sizeof(listint_t));
-	if (!node || idx > listint_len(*head))
+	if (!*head && idx != 0)
+		return (NULL);
+	if (idx != 0)
 	{
-		free(node);
+		tmp = *head;
+		for (; tmp && i < idx - 1; i++, tmp = tmp->next)
+		{}
+		if (!tmp)
+			return (NULL);
+	}
+	new_node = malloc(sizeof(listint_t));
+	if (!new_node)
+	{
+		free(new_node);
 		return (NULL);
 	}
-	node->n = n;
-	node->next = NULL;
-	return (NULL);
-}
-
-
-/**
- * listint_len - Count number of node in the list
- * @h: linked_list
- *
- * Return: number of elements in the node
- */
-size_t listint_len(const listint_t *h)
-{
-	const listint_t *tmp = h;
-	size_t nb = 0;
-
-	for (; tmp; tmp = tmp->next, nb++)
-	{}
-	return (nb);
+	new_node->n = n;
+	if (idx == 0)
+	{
+		new_node->next = *head;
+		*head = new_node;
+		return (new_node);
+	}
+	new_node->next = tmp->next;
+	tmp->next = new_node;
+	return (new_node);
 }
