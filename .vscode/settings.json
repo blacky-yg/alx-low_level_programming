@@ -9,6 +9,7 @@
 		"dog.h": "c",
 		"stdlib.h": "c",
 		"3-calc.h": "c",
-		"variadic_functions.h": "c"
+		"variadic_functions.h": "c",
+		"main.h": "c"
 	}
 }
